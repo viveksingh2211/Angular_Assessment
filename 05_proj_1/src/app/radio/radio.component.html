@@ -1,0 +1,14 @@
+<div>
+    <h1>{{ title }}</h1>
+    <input (click)="chooseOption('valid')" type="radio" id="one" name="radio" />
+    <label for="one">valid</label>
+    
+    <input (click)="chooseOption('invalid')" type="radio" id="two" name="radio" />
+    <label for="two">Invalid</label>
+    
+    @if(isValid){
+        <h3>Data is Valid</h3>
+    }@else{
+        <h3>Data is Invalid</h3>
+    }
+</div>

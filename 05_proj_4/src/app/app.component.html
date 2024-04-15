@@ -1,0 +1,15 @@
+<h1>{{ title }}</h1>
+
+@for(s of student; track s){
+<div>{{ s.studentId }}</div>
+}
+
+<!-- <div>{{ total }}</div>
+<div>{{ noFemale }}</div>
+<div>{{ noMale }}</div> -->
+
+<app-student
+  [total]="total"
+  [noMale]="noMale"
+  [noFemale]="noFemale"
+></app-student>

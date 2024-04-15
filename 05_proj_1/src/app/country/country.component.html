@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <h1>country works!</h1>
+  <select [(ngModel)]="country">
+    <option value="india">India</option>
+    <option value="england">England</option>
+    <option value="nepal">Nepal</option>
+    <option value="srilanka">Srilanka</option>
+    <option value="russia">Russia</option>
+  </select>
+
+  @switch(country)
+   { 
+    @case('india') {
+  <div>I love my India</div>
+  } 
+  @case('nepal') {
+  <div>You are Selected Nepal</div>
+  } @case('england'){
+  <div>You are selected England</div>
+  } @case('srilanka'){
+  <div>You are selected srilanka</div>
+  } @case('russia'){
+  <div>You are selected russia</div>
+  } }
+</div>

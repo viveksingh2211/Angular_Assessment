@@ -1,0 +1,18 @@
+<div id="box">
+  <h3>Student {{ title }}</h3>
+  <label >Name</label>
+  <input type="text" name="user-name" [(ngModel)]="name" />
+  <br/>
+  {{ name }}
+  <br />
+  <button [disabled]="name.length === 0 ? true : false">Submit</button>
+
+  <!-- This is the example of One way -->
+  <!-- <label>Name</label>
+  <input type="text" name="user-name" value="{{name}}" disabled="{{ isDisable }}" />
+  
+  <label>Name2</label>
+  <input type="text" name="user-name" [value]="name" [disabled]="isDisable" /> -->
+
+</div>
+<script></script>

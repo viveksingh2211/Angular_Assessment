@@ -1,0 +1,27 @@
+<h1>{{ title }}</h1>
+
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  td {
+    padding: 10px;
+  }
+</style>
+<table>
+  <tr>
+    <th colspan="5"><h3>Fruit</h3></th>
+  </tr>
+  <tr>
+    @for(f of fruit; track f) {
+    <td>
+      <h4>{{ f }}</h4>
+    </td>
+    }
+  </tr>
+</table>
+
+<app-radio></app-radio>
+<app-country></app-country>
